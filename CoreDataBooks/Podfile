@@ -1,0 +1,5 @@
+platform :ios
+
+target 'CoreDataBooks-cal', :exclusive => false do
+	pod 'Calabash'
+end
