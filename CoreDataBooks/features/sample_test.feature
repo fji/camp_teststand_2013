@@ -4,8 +4,8 @@ Feature: Running a test
   So I can begin testing quickly
 
 Scenario: Example steps
-  Given I am on the Authors Screen
-  And the app is running
+  Given the app is running
+  And I am on the Authors Screen
   Then I should see a "Add" button
   And I press the "Add" button
   And I should see an item "Title" at index 1
@@ -14,8 +14,11 @@ Scenario: Example steps
   And I see 1 text field
   And I clear text field number 1
   And I enter "Hitchhiker's Guide to the Galaxy" into text field number 1
+  Then I wait for the "Save" button to appear
   And I press the "Save" button
+  Then I rotate device left
   Then I touch list item number 2
+  Then I rotate device right
   And I see 1 text field
   And I clear text field number 1
   And I enter "Douglas Adams" into text field number 1
