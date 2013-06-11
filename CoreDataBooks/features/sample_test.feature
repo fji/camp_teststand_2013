@@ -16,6 +16,7 @@ Scenario: Example steps
   And I clear text field number 1
   And I enter "Hitchhiker's Guide to the Galaxy" into text field number 1
   And I press the "Save" button
+  Then I rotate the device to portrait
   Then I touch list item number 2
   And I see 1 text field
   And I clear text field number 1
