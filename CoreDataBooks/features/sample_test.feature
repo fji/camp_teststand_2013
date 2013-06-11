@@ -10,6 +10,7 @@ Scenario: Example steps
   And I press the "Add" button
   And I should see an item "Title" at index 1
   And I should see an item "Author" at index 2
+  Then I rotate the device to landscape
   Then I touch list item number 1
   And I see 1 text field
   And I clear text field number 1
@@ -25,5 +26,6 @@ Scenario: Example steps
   And I press the "Save" button
   Then I press the "Save" button
   And I wait and wait
+ 
   
 

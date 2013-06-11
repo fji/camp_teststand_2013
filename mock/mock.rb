@@ -1,6 +1,7 @@
 require 'sinatra'
 
-set :port, 80
+set :port, 8080
+set :bind, "192.168.200.116"
 
 post '/landscape' do
 	sleep 2
