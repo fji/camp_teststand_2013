@@ -23,7 +23,7 @@ build/
 *~
 *.dat
 *.dep
-/App/Pods/
+/CoreDataBooks/Pods/
 
 # Appcode
 .idea/
