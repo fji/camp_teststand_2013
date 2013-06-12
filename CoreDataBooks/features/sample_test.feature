@@ -4,7 +4,7 @@ Feature: Running a test
   So I can begin testing quickly
 
 Scenario: Example steps
-  Given the app is running
+#  Given the app is running
   And I am on the Authors Screen
   Then I should see a "Add" button
   And I press the "Add" button
