@@ -1,6 +1,5 @@
 require 'calabash-android/calabash_steps'
 
-
 #Servo Rotation via http
 def request_servo_rotation(device_id, orientation, server_adress, server_port)
 	server = ENV['SERVO_SERVER_ADR']
@@ -16,16 +15,9 @@ def request_servo_rotation(device_id, orientation, server_adress, server_port)
 		orientation = "landscape"
 	end
 	
-	uri = URI("http://" + server_adress + ":" + server_port + "/" + orientation)
+	`curl -X PUT -d #{orientation} http://#{server_adress}:#{server_port}/#{device_id}`
 	
-	http = Net::HTTP.new(uri.host, uri.port)
 	
-	request = Net::HTTP::Post.new(uri.request_uri)
-	request.body = device_id
-	http.read_timeout = 5
-	
-	res = http.request(request)
-	puts res.body
 end
 
 
