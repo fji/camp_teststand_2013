@@ -21,5 +21,13 @@
     <fragment class="com.example.android.hcgallery.ContentFragment"
             android:id="@+id/content_frag"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent" 
+            android:layout_gravity="center_vertical"/>
+    <Button
+            android:id="@+id/portraitButton"
+            android:text="Don't click me!"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom" />
+    
 </FrameLayout>

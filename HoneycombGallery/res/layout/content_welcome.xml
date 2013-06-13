@@ -22,13 +22,7 @@
     android:clickable="true"
     android:padding="24dp" >
 
-    <LinearLayout
-        android:id="@+id/contentLinearLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:orientation="vertical" >
-
+    
         <ImageView
             android:id="@+id/image"
             android:layout_width="wrap_content"
@@ -36,12 +30,6 @@
             android:background="@drawable/picture_frame"
             android:duplicateParentState="true" />
 
-        <Button
-            android:id="@+id/portraitButton"
-            android:text="Don't click me!"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-    </LinearLayout>
-
+        
+    
 </view>

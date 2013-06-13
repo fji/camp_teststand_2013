@@ -5,11 +5,13 @@ Feature: View landscape
   
   Scenario: go to image in landscape mode
     Given I rotate the device to portrait via servo
-    Then I should see the text "Red Balloon"
-    When I press the the text "Red Balloon"
-    And I wait for view with id "image" to appear
-    Then I should see the text "Don't click me!"
-    And I press the text "Don't click me!"
+    And I wait for a second
+    Then I should see "Red Balloon"
+    When I press "Red Balloon"
+    And I wait for the view with id "image" to appear
+    Then I should see "Don't click me!"
+    And I press "Don't click me!"
     When I rotate the device to landscape via servo
-    Then I should not see the text "Don't click me!"
+    And I wait for a second
+    Then I should not see "Don't click me!"
     
