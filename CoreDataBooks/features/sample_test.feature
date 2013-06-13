@@ -11,9 +11,9 @@ Scenario: Example steps
   And I should see an item "Title" at index 1
   And I should see an item "Author" at index 2
   Then I touch list item number 1
+  And I wait for 1 text field
   Then I rotate the device to landscape via servo
   And I wait
-  And I should see 0 text fields
   Then I rotate the device to portrait via servo
   And I wait
   And I should see 1 text field
