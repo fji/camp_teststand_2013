@@ -1,4 +1,4 @@
-require 'calabash-android/calabash_steps'
+require 'calabash-cucumber/calabash_steps'
 
 #Servo Rotation via http
 def request_servo_rotation(device_id, orientation, server_adress, server_port)
