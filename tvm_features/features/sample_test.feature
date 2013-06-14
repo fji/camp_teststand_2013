@@ -9,13 +9,13 @@ Scenario: Example steps
   And I swipe right on the carousel
   And I swipe right on the carousel
   And I wait
-  And I touch the "Übersicht" tabBarButton
+  And I touch the "Overview" tabBarButton
   And I touch list item number 3
   Then I should see the detail screen
   And I wait
   Then I touch the close button on the detail screen
   And I wait
-  And I touch the "Programm" tabBarButton
+  And I touch the "Program" tabBarButton
   And I wait
   And I scroll down on the program screen
   And I scroll right on the program screen
@@ -26,7 +26,7 @@ Scenario: Example steps
   And I wait
   And I touch the "Merkzettel" tabBarButton
   And I wait and wait
-  And I touch the "Einstellungen" tabBarButton
+  And I touch the "Settings" tabBarButton
   And I wait and wait
  
   
