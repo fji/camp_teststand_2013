@@ -11,6 +11,7 @@ Scenario: Example steps
   And I wait
   And I touch the "Overview" tabBarButton
   And I touch list item number 3
+  And I wait
   Then I should see the detail screen
   And I wait
   Then I touch the close button on the detail screen
